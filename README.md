@@ -1,5 +1,3 @@
-Express.js Challenge: Note Taker
-
 # Note Taker
 Using Express.js build a profile generator to find your teams info. 
 
