@@ -49,6 +49,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 [Inquirer](http://www.npmjs.com/package/inquirer)
 
+[DB-JSON](https://www.npmjs.com/package/db-json)
+
 ---
 
 ### Author

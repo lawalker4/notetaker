@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "db-json": "^0.1.0",
     "inquire": "^0.4.8"
   }
 }
