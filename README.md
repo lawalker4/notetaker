@@ -31,13 +31,9 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
 
+---
 ## Mock Up
 1. ![MockUp](/images/MockUp.JPG)
-
----
-### Screenshot
-1. ![screenshot 1](/images/Screenshot1.JPG/)
-2. ![screenshot 2](/images/Screenshot2.JPG)
 
 ---
 ### Installation
@@ -58,6 +54,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ---
 
 ### Author
+
 Built and maintain by [Ashley Walker](https://github.com/lawalker4)
 ---
 
