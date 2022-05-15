@@ -11,7 +11,8 @@ router.get('/notes', (req, res) =>{
     resizeBy.json(results);
 });
 
-router.get('/notes', (req, res) => {
+//Path of what the arrays will be
+router.post('/notes', (req, res) => {
     if(notesArray){
         req.body.id = notesArray.length.toString();
     }else{req.body.id =0}
@@ -19,7 +20,7 @@ router.get('/notes', (req, res) => {
    
 });
 
-//route infomation to delete
+//Route infomation to delete
 router.delete('/notes', (req, res) =>{
     const{id} = req.params
     notesArray = await deleteNote(id, notesArray);
