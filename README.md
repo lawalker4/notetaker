@@ -1,12 +1,5 @@
 # Note Taker
-Using Express.js build a profile generator to find your teams info. 
-
----
-## Contents
-1. About
-2. Installation
-3. License
-4. Authors
+Using Express.js this application, called Note Taker, will allow you to save and retrieve notes that you have saved on your application.  
 
 ---
 ## About
@@ -38,6 +31,9 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
 
+## Mock Up
+1. ![MockUp](/images/MockUp.JPG)
+
 ---
 ### Screenshot
 1. ![screenshot 1](/images/Screenshot1.JPG/)
@@ -50,6 +46,14 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 [Inquirer](http://www.npmjs.com/package/inquirer)
 
 [DB-JSON](https://www.npmjs.com/package/db-json)
+
+[Heroku](https://www.heroku.com/)
+
+---
+
+### Screenshot
+1. ![screenshot 1](/images/Screenshot1.JPG/)
+2. ![screenshot 2](/images/Screenshot2.JPG)
 
 ---
 
