@@ -1,44 +1,41 @@
 const router = require('express').Router();
-const { filterByQuery, createNewNotes, validateNotes, deleteNote } = require('./public/assets/notes.html');
 const { notes } = require ('./package.json');
+const store = require('../db/store');
 const req = require('express/lib/request');
 const res = require('express/lib/response');
 
 //Notes are saved at api/notes
 router.get('/notes', (req, res) => {
-    let results = notes;
-    if (req.query) {
-      results = filterByQuery(req.query, results);
-    }
-    res.json(results);
-  });
+    store 
+      .getNotes()
+      .then(notes => {
+        res.json(notes)
+      })
+      .catch(err => {
+        res.status(500).json(err)
+      })
+    });
 
 //Path of what the arrays will be
-router.get('/notes', (req, res) => {
-    if(notesArray){
-        req.body.id = notesArray.length.toString();
-    }else{req.body.id =0}
-    res.json(createNewNotes(req.body, notesArray));
-   
-});
-
 router.post('/notes', (req, res) => {
     // set id based on what the next index of the array will be
-    req.body.id = notes.length.toString();
-  
-    if (!validateNotes(req.body)) {
-      res.status(400).send('The notes are not properly formatted.');
-    } else {
-      const notes = createNewNotes(req.body, notes);
-      res.json(notes);
-    }
+    console.log(req.body)
+    store 
+      .addNotes(req.body)
+      .then(note => {
+        res.json(note)
+      })
+      .catch (err => {
+        res/SVGAnimatedTransformList(500).json(err)
+      })
   });
 
 //Route infomation to delete
 router.delete('/notes', (req, res) =>{
-    const{id} = req.params
-    notesArray = deleteNote(id, notesArray);
-    res.json(notesArray);
+  store
+  .removeNote(req.params.id)
+  .then(()=> res.json({ok: true}))
+      
 });
 
 module.exports =router;
