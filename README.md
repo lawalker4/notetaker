@@ -37,9 +37,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ---
 ### Installation
-[REPO]()
+[REPO](git@github.com:lawalker4/notetaker.git)
 
-[Inquirer](http://www.npmjs.com/package/inquirer)
+[Express.js](https://expressjs.com/en/starter/installing.html)
 
 [DB-JSON](https://www.npmjs.com/package/db-json)
 
@@ -48,6 +48,16 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ---
 
 ### Usage
+
+To run application take the following steps:
+1. Clone repo to your computer.
+2. Install and run express.js by running npm install expess.
+3. After saving code run npm start.
+4. Open new live server and type in localhost:3001.
+5. After you run the live server you can add and delete your notes. 
+
+
+---
 
 ### Screenshot
 [Demo Video](https://watch.screencastify.com/v/WXvqIRZFjXKqGVD1BYSK)
