@@ -50,7 +50,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ### Usage
 
 ### Screenshot
-(https://watch.screencastify.com/v/WXvqIRZFjXKqGVD1BYSK)
+[Demo Video](https://watch.screencastify.com/v/WXvqIRZFjXKqGVD1BYSK)
 
 ---
 
