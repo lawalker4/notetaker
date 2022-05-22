@@ -47,9 +47,10 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ---
 
+### Usage
+
 ### Screenshot
-1. ![screenshot 1](/images/Screenshot1.JPG/)
-2. ![screenshot 2](/images/Screenshot2.JPG)
+1. ![Demo Video](./images/NoteTaker%20video.webm)
 
 ---
 
