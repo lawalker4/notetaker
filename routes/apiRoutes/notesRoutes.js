@@ -1,9 +1,5 @@
 const router = require('express').Router();
-const { notes } = require ('./package.json');
-const store = require('../db/store');
-const req = require('express/lib/request');
-const res = require('express/lib/response');
-
+const store = require('../../db/store');
 //Notes are saved at api/notes
 router.get('/notes', (req, res) => {
     store 
@@ -25,15 +21,15 @@ router.post('/notes', (req, res) => {
       .then(note => {
         res.json(note)
       })
-      .catch (err => {
-        res/SVGAnimatedTransformList(500).json(err)
-      })
+      // .catch (err => {
+      //   res.status(500).json(err)
+      // })
   });
 
 //Route infomation to delete
-router.delete('/notes', (req, res) =>{
+router.delete('/notes/:id', (req, res) =>{
   store
-  .removeNote(req.params.id)
+  .removeNotes(req.params.id)
   .then(()=> res.json({ok: true}))
       
 });

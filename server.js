@@ -1,12 +1,11 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const {nanoid} = require('nanoid')
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/html/Routes');
+const apiRoutes = require('./routes/apiRoutes/notesRoutes');
+const htmlRoutes = require('./routes/htmlRoutes/index')
 
 // Parse URL encoded, JSON and Public
 app.use(express.urlencoded({ extended:true}));
