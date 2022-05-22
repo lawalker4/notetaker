@@ -33,7 +33,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ---
 ## Mock Up
-1. ![MockUp](/images/MockUp.JPG)
+![MockUp](/images/MockUp.JPG)
 
 ---
 ### Installation
@@ -50,7 +50,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ### Usage
 
 ### Screenshot
-1. ![Demo Video](./images/NoteTaker%20video.webm)
+()./images/NoteTaker%20video.webm)
 
 ---
 
